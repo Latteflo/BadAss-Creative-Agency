@@ -1,0 +1,241 @@
+body {
+  background-image: linear-gradient(135deg, #f05f57 10%, #360940 100%);
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.big-cat {
+  width: 100%;
+  height: 100%;
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/059/668/original/sphynx-cat-removebg.png?1671472528);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  position: absolute;
+}
+
+.red {
+  background-color: #b12b2c;
+}
+.red-bg {
+  background: #e1050559;
+  position: absolute;
+  z-index: 0;
+  top: 10%;
+  left: 22%;
+  width: 16%;
+  height: 70%;
+}
+
+.container,
+.hero,
+.white-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  padding: 0;
+  margin: 0;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.white-bg {
+  background-color: #fff;
+  z-index: -3;
+}
+
+.hero {
+  box-shadow: 0 4px 30px #0000001a;
+  backdrop-filter: blur(0.1px);
+  -webkit-backdrop-filter: blur(3.1px);
+  border: 1px solid #ffffff03;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 6%;
+  height: 100%;
+  background-color: #f4f4f4;
+}
+
+.sidebar.right,
+.left {
+  position: absolute;
+}
+
+.right {
+  left: 0;
+}
+
+.left {
+  right: 0;
+  top: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+li {
+  margin: 0.5rem;
+  text-decoration: none;
+}
+
+.slider {
+  position: absolute;
+  display: inline-flex;
+  left: 41%;
+  top: 0%;
+}
+
+.black {
+  background-color: #000;
+  color: #fff;
+}
+.white {
+  color: #fff;
+  background: linear-gradient(90deg, #000 50%, #b12b2c 50%);
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+  margin-left: 19.5%;
+  margin-top: 15%;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.1%;
+}
+
+h1 {
+  display: inline-flex;
+  flex-direction: column;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+span {
+  font-size: 1.5rem;
+  color: #242323;
+}
+
+button {
+  text-transform: uppercase;
+  background: #b00a0aac;
+  border: none;
+  display: inline;
+  color: #f4f4f4;
+  padding: 16px 50px 0 50px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 4%;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+button.search {
+  transition: 0.4s;
+  font-size: 1rem;
+  padding: 16px;
+}
+
+.search-bar {
+  position: relative;
+  display: inline-flex;
+  top: 3%;
+  left: 10%;
+  width: 1%;
+  z-index: 1;
+}
+.search-input {
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.search-bar:hover > .search-input {
+  width: 200px;
+  padding: 0;
+}
+
+hr {
+  color: #000;
+  border: #fff solid 2px;
+}
+
+.contact {
+  position: absolute;
+  display: block;
+  top: 0%;
+  right: 5%;
+  width: 36%;
+  height: 40%;
+  z-index: 1;
+}
+
+.contact-btn,
+.menu-btn {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  padding: 2%;
+  margin: 0;
+  top: 5%;
+}
+
+.contact-btn {
+  right: 16%;
+}
+
+.menu-btn {
+  right: 4%;
+}
+
+h3 {
+  position: absolute;
+  color: #000;
+  width: 33%;
+  margin: 0;
+  padding: 4%;
+  right: 16%;
+  top: 2%;
+}
+
+.vertical {
+  display: inline-block;
+  transform: rotate(90deg);
+  margin: 0;
+  position: absolute;
+  padding: 4%;
+  right: -10%;
+  top: 45%;
+}
